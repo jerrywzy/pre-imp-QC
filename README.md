@@ -12,5 +12,5 @@ Scripts to carry out quality control on genotypes based on minor allele frequenc
 2. Place PLINK (.bed, .bim, .fam) files into /input.
 2. Edit the section "To be edited by user" in run-pipeline.sh
 3. Run run-pipeline.sh with ./run-pipeline.sh.
-4. Initial QC-ed files will be located in 06results.
+4. Initial QC-ed files will be located in /06results.
 5. (optional) Run initial imputation on Michigan Imputation Server and save typed-only.txt and snps-excluded.txt from the server. Edit the "mich_files" parameter in /07server-check/exclude.sh to direct the script to directory containing the .txt files. Then, run the script with "./exclude.sh". The final files will be located in /07server-check/"$race"/"$panel".
