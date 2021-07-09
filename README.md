@@ -2,7 +2,7 @@
 Scripts to carry out quality control on genotypes based on minor allele frequency, deviation from Hardy-Weinberg equilibrium, and missingness before imputation on Michigan and Sanger imputation servers, followed by VCF checks with WilL Rayner's pre-imputation checking scripts and Zhan Xiaowei's checkVCF.py Python script. This pipeline was written to carry out imputation on genotypes from 3 different races, on the 1000 Genome and HRC reference panels.
 
 ##Technologies
-* Python version: 3.7.6
+* Python version: 3.7.6 / 2.7.5
 * PLINK version: 1.90b5.3
 * VCFtools version: 0.1.13
 * BCFtools version: 1.9 (using htslib 1.9)
