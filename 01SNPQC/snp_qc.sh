@@ -5,7 +5,7 @@
 ################
 ## PARAMETERS ##
 ################
-working=/hpc/home/lsiwzyj/iOmics_QC/Genomic-Feb2020/Genotyping/Omni2.5/Chinese_HRC/pre-imp-QC # directory to scripts 
+working=$1 # directory to scripts 
 input=${working}/input  # working directory with input files 
 races=( Chinese Malay Indian ) # specified races/names of input files (Chinese.bed, Chinese.bim, Chinese.fam etc) 
 

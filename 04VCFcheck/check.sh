@@ -5,7 +5,7 @@
 ################
 ## PARAMETERS ##
 ################
-working=/dir/with/scripts # directory to scripts 
+working=$1 # directory to scripts 
 overlap=${working}/03overlap # directory to 03overlap
 checkvcf=${working}/04VCFcheck
 races=( Chinese Malay Indian ) # specified races/names of input files (Chinese.bed, Chinese.bim, Chinese.fam etc) 
@@ -13,6 +13,8 @@ races=( Chinese Malay Indian ) # specified races/names of input files (Chinese.b
 # download scripts from 
 wget http://qbrc.swmed.edu/zhanxw/software/checkVCF/checkVCF-20140116.tar.gz
 tar -xvf checkVCF-20140116.tar.gz
+mkdir -p checkvcf
+mv checkVCF.py README.md example.vcf.gz hs37d5.fa hs37d5.fa.fai checkvcf/
 
 for race in "${races[@]}"
 do

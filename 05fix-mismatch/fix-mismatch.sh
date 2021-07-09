@@ -5,13 +5,12 @@
 ################
 ## PARAMETERS ##
 ################
-working=/dir/with/scripts # directory to scripts 
+working=$1 # directory to scripts 
 overlap=${working}/03overlap # directory to 03overlap
 checkvcf=${working}/04VCFcheck
 races=( Chinese Malay Indian ) # specified races/names of input files (Chinese.bed, Chinese.bim, Chinese.fam etc)
 
-VCFTOOLS=/dir/to/vcftools/vcftools-vcftools-cb8e254/src/perl
-BGZIP=/dir/to/bgzip/
+VCFTOOLS=$2
 
 for race in "${races[@]}"
 do
