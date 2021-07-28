@@ -19,7 +19,7 @@ do
   python ${working}/01SNPQC/filterAutosomes.py ${input}/"$race".bim > autosomes.list
     
   # Extract autosomes from .bim file 
-  plink --bfile ${input}/"$race".bim --extract autosomes.list --make-bed -out "$race"_autosomes
+  plink --bfile ${input}/"$race" --extract autosomes.list --make-bed -out "$race"_autosomes
   
   ##################################
   ## exclude SNPs with maf < 0.05 ##
