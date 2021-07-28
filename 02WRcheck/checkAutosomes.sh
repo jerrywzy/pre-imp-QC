@@ -7,6 +7,7 @@
 ################
 working=$1 # directory to scripts 
 snpqc=${working}/01SNPQC # directory to 01SNPQC
+WRcheck=${working}/02WRcheck
 races=( Chinese Malay Indian ) # specified races/names of input files (Chinese.bed, Chinese.bim, Chinese.fam etc) 
 panels=( 1000G HRC ) # panels to run Will Rayner's checking script on
 
